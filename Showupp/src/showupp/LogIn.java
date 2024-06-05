@@ -127,7 +127,9 @@ public class LogIn extends JDialog {
 	                if (korisnik.equals(imeAdmin) && lozinka.equals(lozinkaAdmin)){ 
 	                	UpisEvenata dlg = new UpisEvenata();
 	                    dlg.setVisible(true);
-	                }}
+	                }else{
+				JOptionPane.showMessageDialog(null, "Unijesti ste krive podatke ili niste administrator !", "Error", JOptionPane.ERROR_MESSAGE);
+			}
 	                
 		      
 		      conn.close();
